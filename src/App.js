@@ -3,9 +3,9 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Navbar from "./components/Navbar";
-import Release from "./components/AboutUs";
+import AboutUs from "./components/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
-import SuperRare from "./components/Gallery";
+import Gallery from "./components/Gallery";
 import scrollreveal from "scrollreveal";
 import "./sass/index.scss";
 function App() {
@@ -48,9 +48,9 @@ function App() {
       <ScrollToTop />
       <Navbar changeTheme={changeTheme} currentTheme={theme} />
       <Home />
-      <SuperRare />
+      <Gallery />
       <Blog />
-      <Release />
+      <AboutUs />
       <Footer />
     </div>
   );
