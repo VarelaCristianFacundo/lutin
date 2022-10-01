@@ -2,11 +2,11 @@ import React from "react";
 import eth1 from "../assets/eth1.png";
 import eth2 from "../assets/eth2.png";
 
-export default function Like() {
+export default function Blog() {
   return (
     <>
       <h2 className="title">Blog</h2>
-    <div className="like">
+    <div className="blog">
       <div className="content">
       </div>
       <div className="container">

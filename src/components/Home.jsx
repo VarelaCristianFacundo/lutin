@@ -17,7 +17,6 @@ export default function Home() {
         </div>
         <div className="image-container">
           <div className="image">
-            {/* <img src={home} alt="home image" /> */}
             <Carousel>
               <Carousel.Item>
                 <img                  

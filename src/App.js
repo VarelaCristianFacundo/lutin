@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Like from "./components/Like";
+import Blog from "./components/Blog";
 import Navbar from "./components/Navbar";
 import Release from "./components/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
-import SuperRare from "./components/SuperRare";
+import SuperRare from "./components/Gallery";
 import scrollreveal from "scrollreveal";
 import "./sass/index.scss";
 function App() {
@@ -27,7 +27,7 @@ function App() {
         .home,
         .super-rare,
         .releases,
-        .like,
+        .blog,
         footer
     `,
         {
@@ -49,7 +49,7 @@ function App() {
       <Navbar changeTheme={changeTheme} currentTheme={theme} />
       <Home />
       <SuperRare />
-      <Like />
+      <Blog />
       <Release />
       <Footer />
     </div>

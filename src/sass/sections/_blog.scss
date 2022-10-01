@@ -1,4 +1,4 @@
-.like {
+.blog {
   display: flex;
   justify-content: center;
   margin: 5rem 0;
@@ -34,7 +34,7 @@
   color: var(--accent-color1);
 }
 @media screen and (min-width: 280px) and (max-width: 1080px) {
-  .like {
+  .blog {
     margin: 0;
     .container {
       grid-template-columns: 1fr;
