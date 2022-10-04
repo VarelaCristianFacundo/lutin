@@ -7,7 +7,7 @@ import logo from "../assets/Union.png";
 export default function Navbar({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
   return (
-    <nav>
+    <nav className="navbar">
       <div className="brand-container">
         <div className="brand">
           <img src={logo} alt="logo" />
@@ -32,16 +32,16 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#features">Galería</a>
+            <a href="#galeria">Galería</a>
           </li>
           <li>
-            <a href="#about">Blogs</a>
+            <a href="#blogs">Blogs</a>
           </li>
           <li>
-            <a href="#launch">Sobre Nosotros</a>
+            <a href="#aboutus">Sobre Nosotros</a>
           </li>
           <li>
-            <a href="#signup">Contacto</a>
+            <a href="#contact">Contacto</a>
           </li>
           <li onClick={changeTheme}>
             {currentTheme === "dark" ? (

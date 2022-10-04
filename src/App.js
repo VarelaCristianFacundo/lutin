@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery";
 import scrollreveal from "scrollreveal";
+import ContactForm from "./components/ContactForm";
 import "./sass/index.scss";
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -44,15 +45,18 @@ function App() {
     nav[0].style.transform = "none";
   }, 1500);
   return (
-    <div data-theme={theme} className="app-container">
-      <ScrollToTop />
-      <Navbar changeTheme={changeTheme} currentTheme={theme} />
-      <Home />
-      <Gallery />
-      <Blog />
-      <AboutUs />
-      <Footer />
-    </div>
+    <>
+        <Navbar changeTheme={changeTheme} currentTheme={theme} />
+        <div data-theme={theme} className="app-container">
+          <ScrollToTop />
+          <Home />
+          <Gallery />
+          <Blog />
+          <AboutUs />
+          <ContactForm />
+          <Footer />
+      </div>
+    </>
   );
 }
 

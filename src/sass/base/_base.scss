@@ -135,6 +135,13 @@ html {
 
 }
 
+.navbar{
+  background-color: #160A26;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .app-container {
   background-color: var(--background);
   font-family: var(--font-family);

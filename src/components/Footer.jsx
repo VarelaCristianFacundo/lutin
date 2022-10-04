@@ -1,24 +1,29 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import bitcoin from "../assets/bitcoin.png";
+import ethereum from "../assets/ethereum.png";
+import polygon from "../assets/polygon.png";
+import solana from "../assets/solana.png";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 export default function Footer() {
   const links = [
     {
-      title: "About",
-      data: ["About", "Terms", "Legal"],
+      title: "Lutin Studios",
+      data: ["Home", "Blog", "Galería", "Contacto", "Lutin Studios en OpenSea"],
     },
+  ];
+
+  const redesSociales = [
     {
-      title: "NFT",
-      data: ["OpenSea", "Maker", "Learn"],
-    },
-    {
-      title: "Contact",
+      title: "Búscanos en:",
       data: ["Press", "Support"],
     },
+  ];
+  const imgCoins = [
     {
-      title: "Social",
-      data: ["Twiiter", "Instagram"],
+      title: "Compatible con:",
+      data: [bitcoin, ethereum, polygon, solana],
     },
   ];
   const socialLink = [
@@ -34,12 +39,11 @@ export default function Footer() {
           <div className="brand">
             <img src={logo} alt="logo" />
           </div>
-          <p>Exclusive NFT Collection</p>
-          <ul>
-            {socialLink.map((link, index) => (
-              <li key={index}>{link}</li>
-            ))}
-          </ul>
+          <h1>Suscribite a nuestro newsletter.</h1>
+          <p>
+            Suscríbete y recibe notificaciones de nuevos lanzamientos y otras
+            noticias de NFT directo en tu e-mail.
+          </p>
         </div>
         <div className="links">
           {links.map(({ title, data }, index) => {
@@ -55,8 +59,44 @@ export default function Footer() {
             );
           })}
         </div>
+        <div className="links">
+          {redesSociales.map(({ title, data }, index) => {
+            return (
+              <div className="link" key={index}>
+                <h4>{title}</h4>
+                <ul>
+                  {data.map((link, index2) => (
+                    <li key={index2}>{link}</li>
+                  ))}
+                </ul>
+                <ul>
+                  {socialLink.map((link, index) => (
+                    <li key={index}>{link}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+        <div className="links">
+          {imgCoins.map(({ title, data }, index) => {
+            return (
+              <div className="link" key={index}>
+                <h4>{title}</h4>
+                <ul>
+                  {data.map((img, index2) => (
+                    <li key={index2}>
+                      <img src={img} alt={img} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="lower">
+        <span><input type="email" name="" id="" />Suscribite</span>
         <span>&copy; Copyright 2022 NFT</span>
         <span>Launching August 2022</span>
       </div>
