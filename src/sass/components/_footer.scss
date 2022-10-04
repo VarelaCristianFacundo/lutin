@@ -10,6 +10,29 @@ footer {
     justify-content: space-evenly;
     color: #262628;
     .brand-container {
+      .input-group{
+        input{
+          border-radius: 0px;
+          border-right: none;
+          border-left: 1px solid #262628;
+          border-top: 1px solid #262628;
+          border-bottom: 1px solid #262628;
+
+        }
+        button{
+          border-left: none;
+          border-right: 1px solid #262628;
+          border-top: 1px solid #262628;
+          border-bottom: 1px solid #262628;
+          color: #262628;
+          
+          font-style: normal;
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 16px;
+          border-radius: 0px;
+        }
+      }
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -68,6 +91,7 @@ footer {
   }
 }
 
+
 [data-theme="light"] {
   footer {
     .brand-container {
@@ -79,6 +103,7 @@ footer {
     }
   }
 }
+
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   footer {

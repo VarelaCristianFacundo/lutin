@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home">      
       <div className="container card-principal">
         <div className="content col">
           <h1 className="title">Conocé nuestro primer lanzamiento</h1>
@@ -20,7 +20,8 @@ export default function Home() {
             <Carousel>
               <Carousel.Item>
                 <img                  
-                  height={500}
+                  height={400}
+                  width={400}
                   className="d-block w-100"
                   src={release1}
                   alt="First slide"
@@ -28,7 +29,8 @@ export default function Home() {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  height={500}
+                  height={400}
+                  width={400}
                   className="d-block w-100"
                   src={release2}
                   alt="Second slide"
@@ -36,17 +38,14 @@ export default function Home() {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  height={500}
+                  height={400}
+                  width={400}
                   className="d-block w-100"
                   src={release3}
                   alt="Third slide"
                 />
               </Carousel.Item>
             </Carousel>
-          </div>
-          <div className="ellipse-container">
-            <div className="ellipse pink"></div>
-            <div className="ellipse orange"></div>
           </div>
         </div>
       </div>

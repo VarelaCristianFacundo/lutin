@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery";
 import scrollreveal from "scrollreveal";
 import ContactForm from "./components/ContactForm";
+import fondo from "./assets/Hero_Section.png";
 import "./sass/index.scss";
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -46,7 +47,9 @@ function App() {
   }, 1500);
   return (
     <>
+    
         <Navbar changeTheme={changeTheme} currentTheme={theme} />
+        <img src={fondo} style={{width:"100%", position:"absolute"}} alt="" />
         <div data-theme={theme} className="app-container">
           <ScrollToTop />
           <Home />

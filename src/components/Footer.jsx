@@ -6,6 +6,7 @@ import polygon from "../assets/polygon.png";
 import solana from "../assets/solana.png";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
+import { Button, Form, InputGroup } from "react-bootstrap";
 export default function Footer() {
   const links = [
     {
@@ -40,10 +41,20 @@ export default function Footer() {
             <img src={logo} alt="logo" />
           </div>
           <h1>Suscribite a nuestro newsletter.</h1>
-          <p>
+          <p style={{color:"#262628"}}>
             Suscríbete y recibe notificaciones de nuevos lanzamientos y otras
             noticias de NFT directo en tu e-mail.
           </p>
+          <InputGroup className="mb-3">
+        <Form.Control
+          placeholder="Escribe tu e-mail"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+        <Button variant="outline-secondary" id="button-addon2">
+          Suscríbite
+        </Button>
+      </InputGroup>
         </div>
         <div className="links">
           {links.map(({ title, data }, index) => {
@@ -91,7 +102,6 @@ export default function Footer() {
         </div>
       </div>
       <div className="lower">
-        <span><input type="email" name="" id="" />Suscribite</span>
         <span>&copy; Copyright 2022 NFT</span>
         <span>Launching August 2022</span>
       </div>

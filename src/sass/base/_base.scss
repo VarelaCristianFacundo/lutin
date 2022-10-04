@@ -11,7 +11,7 @@
   --accent-color2: #555555;
   --accent-color3: #cccccc;
   --card-color: #000000;
-  --background: #160A26;
+  --background: #1E0E33;
   --font-family: "Inter", sans-serif;
 }
 
@@ -33,7 +33,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.app-container{
+  // background-image: url("../../assets/Hero_Section.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
 .card-principal {
+  z-index: 20;
   box-sizing: border-box;
 
   /* Auto layout */
@@ -51,6 +60,10 @@ html {
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 10px;
+}
+
+.d-block{
+  border-radius: 5px;
 }
 
 .btn-center{
@@ -168,6 +181,7 @@ html {
 .formContact h1,p{
     color: #F6F6F6;
 }
+
 
 .app-container {
   background-color: var(--background);
