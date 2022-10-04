@@ -61,7 +61,7 @@ html {
 .btn-vermas {
   color: var(--accent-color1);
   background-color: #7A12EB;
-  width: 10%;  
+  
   font-weight: bold;
   padding: 1rem 3rem;
   border-radius: 0.5rem;
@@ -101,7 +101,7 @@ html {
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;  
 }
 
@@ -140,6 +140,33 @@ html {
   position: fixed;
   width: 100%;
   z-index: 1;
+  .brand{
+    padding-left: 10rem;
+  }
+  .links-container {
+    padding-right: 10rem;
+  }
+}
+
+.formContent{
+  width: 40%;
+}
+
+.form-label{
+  color: #F6F6F6;
+  text-align: center;
+}
+
+.formContact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.formContact h1,p{
+    color: #F6F6F6;
 }
 
 .app-container {

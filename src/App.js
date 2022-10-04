@@ -54,8 +54,8 @@ function App() {
           <Blog />
           <AboutUs />
           <ContactForm />
-          <Footer />
-      </div>
+        </div>
+        <Footer />
     </>
   );
 }

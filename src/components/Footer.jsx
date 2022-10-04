@@ -4,8 +4,8 @@ import bitcoin from "../assets/bitcoin.png";
 import ethereum from "../assets/ethereum.png";
 import polygon from "../assets/polygon.png";
 import solana from "../assets/solana.png";
-import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaTiktok } from "react-icons/fa";
+import { BsTwitter, BsInstagram } from "react-icons/bs";
+import { FaDiscord } from "react-icons/fa";
 export default function Footer() {
   const links = [
     {
@@ -27,13 +27,13 @@ export default function Footer() {
     },
   ];
   const socialLink = [
-    <BsFacebook />,
     <BsTwitter />,
-    <BsInstagram />,
-    <FaTiktok />,
+    <FaDiscord />,
+    <BsInstagram />,    
   ];
   return (
-    <footer>
+    <footer>        
+      <hr className="container" />
       <div className="upper">
         <div className="brand-container">
           <div className="brand">
@@ -64,12 +64,7 @@ export default function Footer() {
             return (
               <div className="link" key={index}>
                 <h4>{title}</h4>
-                <ul>
-                  {data.map((link, index2) => (
-                    <li key={index2}>{link}</li>
-                  ))}
-                </ul>
-                <ul>
+                <ul className="redes">
                   {socialLink.map((link, index) => (
                     <li key={index}>{link}</li>
                   ))}
@@ -83,7 +78,7 @@ export default function Footer() {
             return (
               <div className="link" key={index}>
                 <h4>{title}</h4>
-                <ul>
+                <ul className="coinMarket">
                   {data.map((img, index2) => (
                     <li key={index2}>
                       <img src={img} alt={img} />
