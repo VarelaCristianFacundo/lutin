@@ -4,6 +4,7 @@ import release2 from "../assets/release2.png";
 import release3 from "../assets/release3.png";
 import { Button, Carousel } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -13,7 +14,9 @@ export default function Home() {
       <div className="container card-principal">
         <div className="content col">
           <h1 className="title">Conocé nuestro primer lanzamiento</h1>
-          <Button className="btn-verNFT">Ver NFT</Button>
+          <Link to="/detalle">
+            <Button className="btn-verNFT">Ver NFT</Button>
+          </Link>
         </div>
         <div className="image-container">
           <div className="image">

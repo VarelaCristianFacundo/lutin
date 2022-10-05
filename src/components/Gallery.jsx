@@ -7,6 +7,7 @@ import super3 from "../assets/super3.png";
 import super4 from "../assets/super4.png";
 import super5 from "../assets/super5.png";
 import super6 from "../assets/super6.png";
+import { Link } from "react-router-dom";
 
 // import Tab from "react-bootstrap/Tab";
 // import Tabs from "react-bootstrap/Tabs";
@@ -40,7 +41,7 @@ export default function SuperRare() {
     },
   ];
   return (
-    <div className="super-rare">
+    <div className="super-rare" id="galeria">
       <div className="title-container">
         <h2 className="title">Galería</h2>
         <ul className="filterCategory">
@@ -57,8 +58,10 @@ export default function SuperRare() {
         </div>
       </div>
 
-      <div className="btn-center">
-        <button className="btn-vermas">Ver Más</button>
+      <div className="btn-center">      
+        <Link to="/galeria">
+          <button className="btn-vermas">Ver Más</button>
+        </Link>
       </div>
     </div>
   );
