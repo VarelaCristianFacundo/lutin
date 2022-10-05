@@ -43,13 +43,13 @@ export default function Navbar({ changeTheme, currentTheme }) {
           <li>
             <a href="#contact">Contacto</a>
           </li>
-          <li onClick={changeTheme}>
+          {/* <li onClick={changeTheme}>
             {currentTheme === "dark" ? (
               <ImSun className="light" />
             ) : (
               <BsFillMoonFill className="dark" />
             )}
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
