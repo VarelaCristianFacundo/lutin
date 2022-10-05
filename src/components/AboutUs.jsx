@@ -16,7 +16,7 @@ export default function Release() {
           Somos un emprendimiento de arte digital. Nos dedicamos a publicitar y vender piezas artistíscas coleccionables, así como difundir proyectos innovadores de artistas alrededor del mundo. Las piezas se comercian en formato NFT (Not Fungible Token), unidades únicas de criptomonedas que no se pueden replicar.            
           </p>          
         </div>
-        <div className="image">
+        <div className="imageLupin">
           <img src={lupinstudios} alt="release" />
           {/* <div className="ellipse pink"></div> */}
         </div>

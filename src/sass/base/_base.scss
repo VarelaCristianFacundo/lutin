@@ -82,8 +82,9 @@ html {
   border: solid 3px transparent;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  &:hover {
+  &:hover, :active {
     box-shadow: none;
+    background-color: #39086E;
   }
 }
 

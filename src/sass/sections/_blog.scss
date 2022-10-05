@@ -19,6 +19,9 @@
           width: 100%;
         }
       }
+      .card-content{
+        border-color: white;
+      }
       .title {
         color: var(--accent-color1);
       }
@@ -26,6 +29,8 @@
         color: var(--accent-color3);
         letter-spacing: 0.1rem;
         line-height: 1.5rem;
+        border-bottom-color: wheat;
+        border-style: dashed;
       }
     }
   }

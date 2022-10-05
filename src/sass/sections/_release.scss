@@ -95,6 +95,17 @@
   }
 }
 
+.orange{
+  display: flex !important;
+}
+.imageLupin{  
+  align-items: flex-end;
+  padding: 20px;
+  padding-top: 8rem;
+  padding-right: 5rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   .releases {
     margin: 0;
