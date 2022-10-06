@@ -3,7 +3,6 @@ import release1 from "../assets/release1.png";
 import release2 from "../assets/release2.png";
 import release3 from "../assets/release3.png";
 import { Button, Carousel } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 
 

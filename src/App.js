@@ -5,8 +5,8 @@ import Detalle from "./pages/Detalle";
 import Galeria from "./pages/Galeria";
 import Blog1 from "./pages/Blog1";
 import Blog2 from "./pages/Blog2";
-import scrollreveal from "scrollreveal";
 import fondo from "./assets/Hero_Section.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./sass/index.scss";
 import { Route, Routes } from "react-router-dom";
 import Inicio from "./pages/Inicio";
@@ -15,36 +15,7 @@ function App() {
   const changeTheme = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   };
-  useEffect(() => {
-    const registerAnimations = () => {
-      const sr = scrollreveal({
-        origin: "bottom",
-        distance: "80px",
-        duration: 2000,
-        reset: false,
-      });
-      sr.reveal(
-        `
-        nav,
-        .home,
-        .super-rare,
-        .releases,
-        .blog,
-        footer
-    `,
-        {
-          interval: 500,
-        }
-      );
-    };
-    registerAnimations();
-  }, []);
-  window.setTimeout(() => {
-    const home = document.getElementsByClassName("home");
-    home[0].style.transform = "none";
-    const nav = document.getElementsByTagName("nav");
-    nav[0].style.transform = "none";
-  }, 1500);
+  
   return (
     <>    
         <Navbar changeTheme={changeTheme} currentTheme={theme} />
