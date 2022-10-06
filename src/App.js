@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Detalle from "./pages/Detalle";
@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./sass/index.scss";
 import { Route, Routes } from "react-router-dom";
 import Inicio from "./pages/Inicio";
+import ScrollUp from "./components/ScrollUp";
 function App() {
   const [theme, setTheme] = useState("dark");
   const changeTheme = () => {
@@ -21,19 +22,15 @@ function App() {
         <Navbar changeTheme={changeTheme} currentTheme={theme} />
         <img src={fondo} style={{width:"100%", position:"absolute"}} alt="" />
         <div data-theme={theme} className="app-container">
-          <Routes>
-            <Route path='/galeria' element={<Galeria />} />
-            <Route path='/blog1' element={<Blog1 />} />
-            <Route path='/blog2' element={<Blog2 />} />            
-            <Route path='/detalle' element={<Detalle />} />
-            <Route path='/*' element={<Inicio />} />
-          </Routes>
-          {/* <ScrollToTop />
-          <Home />
-          <Gallery />
-          <Blog />
-          <AboutUs />
-          <ContactForm /> */}
+            <ScrollUp>
+              <Routes>
+                  <Route path='/galeria' element={<Galeria />} />
+                  <Route path='/blog1' element={<Blog1 />} />
+                  <Route path='/blog2' element={<Blog2 />} />            
+                  <Route path='/detalle' element={<Detalle />} />
+                  <Route path='/*' element={<Inicio />} />
+              </Routes>
+            </ScrollUp>
         </div>
         <Footer />
     </>
