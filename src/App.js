@@ -19,7 +19,7 @@ function App() {
   
   return (
     <>    
-        <Navbar changeTheme={changeTheme} currentTheme={theme} />
+        {/* <Navbar changeTheme={changeTheme} currentTheme={theme} /> */}
         <img src={fondo} style={{width:"100%", position:"absolute"}} alt="" />
         <div data-theme={theme} className="app-container">
             <ScrollUp>

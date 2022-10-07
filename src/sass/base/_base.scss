@@ -90,6 +90,25 @@ html {
   }
 }
 
+.btn-filterDate {
+  padding-left: 7px;
+    padding-right: 7px;
+    padding-top:3px;
+    padding-bottom: 3px;
+    
+  color: var(--accent-color1);
+  background-color: #B9BFBF;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover, :active {
+    box-shadow: none;
+    background-color: #39086E;
+  }
+}
+
 .btn-verNFT {
   color: #6C2817;
   background-color: #E2AF1F;
@@ -119,6 +138,7 @@ html {
 }
 
 .filterCategory{
+  z-index: 1;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -135,6 +155,29 @@ html {
 
   & li.active{
     color: var(--primary);
+    cursor: pointer;
+  }
+}
+
+.filterDate{
+  padding-top: 88px;
+  align-items: center;
+  z-index: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  background: none;
+  text-decoration: none;
+  color: white;
+  border: none;
+  gap: 1rem; 
+
+  & li:hover{    
+    cursor: pointer;
+  }
+
+  & li.active{    
+    background-color: #7A12EB;    
     cursor: pointer;
   }
 }
@@ -179,11 +222,20 @@ html {
 
 }
 
+.spanGallery{
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
 .navbar{
+  top: 0;
+  left: 0;
   background-color: #160A26;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   .brand{
     padding-left: 10rem;
   }

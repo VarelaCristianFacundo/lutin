@@ -4,7 +4,8 @@ import { MdClose } from "react-icons/md";
 import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
 import logo from "../assets/Union.png";
-export default function Navbar({ changeTheme, currentTheme }) {
+import { Link } from "react-router-dom";
+export default function NavbarGaleria({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
   return (
     <nav className="navbar">
@@ -32,17 +33,17 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#galeria">Galería</a>
+            <Link to="/galeria">Galeria</Link>            
           </li>
           <li>
-            <a href="#blogs">Blogs</a>
+            <Link to="/">Blogs</Link>            
           </li>
           <li>
-            <a href="#aboutus">Sobre Nosotros</a>
+            <Link to="/">Sobre Nosotros</Link>            
           </li>
           <li>
-            <a href="#contact">Contacto</a>
-          </li>
+            <Link to="/">Contacto</Link>            
+          </li>          
         </ul>
       </div>
     </nav>
