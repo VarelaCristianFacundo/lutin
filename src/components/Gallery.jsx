@@ -88,12 +88,6 @@ export default function SuperRare() {
             }
         </div>
       </div>
-
-      <div className="btn-center">      
-        <Link to="/galeria">
-          <button className="btn-vermas">Ver Más</button>
-        </Link>
-      </div>
     </div>
   );
 }

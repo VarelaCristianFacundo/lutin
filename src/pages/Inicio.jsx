@@ -6,6 +6,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import AboutUs from '../components/AboutUs';
 import ContactForm from '../components/ContactForm';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 
 export default function Inicio() {
@@ -15,6 +16,11 @@ export default function Inicio() {
           <ScrollToTop />
           <Home />
           <Gallery />
+          <div className="btn-center">      
+            <Link to="/galeria">
+              <button className="btn-vermas">Ver Más</button>
+            </Link>
+          </div>
           <Blog />
           <AboutUs />
           <ContactForm />
