@@ -55,6 +55,9 @@ nav {
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
+  .mode{
+    display: none;
+  }
   nav {
     position: relative;
     padding: 1rem 2rem;
@@ -69,6 +72,7 @@ nav {
         }
       }
       .toggle-container {
+        padding-right: 1rem;
         display: block;
         color: var(--accent-color1);
         display: flex;

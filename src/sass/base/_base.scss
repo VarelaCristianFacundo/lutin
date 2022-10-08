@@ -58,7 +58,9 @@ html {
   box-shadow: 35.4453px 35.4453px 59.0755px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(29.5378px);
   /* Note: backdrop-filter has minimal browser support */
-
+  border-color: white;
+  border-style: solid;
+  border-width: 1.97px ;
   border-radius: 10px;
 }
 
@@ -298,6 +300,9 @@ html {
   transition: 0.5s ease-in-out;
   padding: 2rem 4rem;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .navbar .brand{
+      padding-left: 1rem;
+    }
     padding: 0;
   }
 }
