@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import bitcoin from "../assets/bitcoin.png";
 import ethereum from "../assets/ethereum.png";
@@ -27,13 +27,41 @@ export default function Footer() {
       data: [bitcoin, ethereum, polygon, solana],
     },
   ];
-  const socialLink = [
-    <BsTwitter />,
-    <FaDiscord />,
-    <BsInstagram />,    
-  ];
+  const socialLink = [<BsTwitter />, <FaDiscord />, <BsInstagram />];
+  const [newsletter, setNewsletter] = useState({
+    email: "",
+  });
+
+  const { email } = newsletter;
+
+  const handleChange = (e) => {
+    setNewsletter({ ...newsletter, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://v1.nocodeapi.com/lutinstudios/google_sheets/VQkyWeTwDtbplcMF?tabId=newsletter",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify([
+            [email, new Date().toLocaleString()],
+          ]),
+        }
+      );
+      await response.json();
+      setNewsletter({ ...newsletter, email: "" });
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
-    <footer>        
+    <footer>
       <hr className="container" />
       <div className="upper">
         <div className="brand-container">
@@ -41,20 +69,28 @@ export default function Footer() {
             <img src={logo} alt="logo" />
           </div>
           <h1>Suscribite a nuestro newsletter.</h1>
-          <p style={{color:"#262628"}}>
+          <p style={{ color: "#262628" }}>
             Suscríbete y recibe notificaciones de nuevos lanzamientos y otras
             noticias de NFT directo en tu e-mail.
-          </p>
-          <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="Escribe tu e-mail"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <Button variant="outline-secondary" id="button-addon2">
-          Suscríbite
-        </Button>
-      </InputGroup>
+          </p>          
+          <Form onSubmit={handleSubmit}>
+            <InputGroup className="mb-3">
+            <Form.Group controlId="form.Name" className="formContent">
+              <Form.Control
+                type="email"
+                name="email"
+                value={email}
+                onChange={handleChange}
+                placeholder="Escribe tu e-mail"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              </Form.Group>
+              <div className="btn-center">
+                <button className="btn-suscribe">Suscríbite</button>
+              </div>
+            </InputGroup>
+          </Form>
         </div>
         <div className="links">
           {links.map(({ title, data }, index) => {
