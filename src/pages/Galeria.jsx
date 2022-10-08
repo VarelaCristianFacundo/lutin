@@ -4,10 +4,11 @@ import NavbarGaleria from '../components/NavbarGaleria';
 
 
 export default function Galeria() {
+  const sortGallery = true;
   return (
     <div className="app-container">     
       <NavbarGaleria />
-      <Gallery />
+      <Gallery sortGallery={sortGallery}/>
     </div>
   )
 }

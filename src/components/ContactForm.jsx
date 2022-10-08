@@ -12,9 +12,9 @@ export default function ContactForm() {
           <Form.Group controlId="form.Name" className="formContent">
             <Form.Control type="text" placeholder="Escribe tu nombre" />
           </Form.Group>
-          <Form.Group controlId="form.Email" className="formContent">
-            <br />
-            <Form.Control type="email" placeholder="Escribe el asunto" />
+          <br />
+          <Form.Group controlId="form.Name" className="formContent">
+            <Form.Control type="email" placeholder="Escribe tu email" />
           </Form.Group>
           <Form.Group controlId="form.Textarea" className="formContent">
             <br />

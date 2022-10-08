@@ -10,12 +10,13 @@ import { Link } from 'react-router-dom';
 
 
 export default function Inicio() {
-  return (
+  const sortGallery = false;
+  return (    
     <div className="app-container">
           <Navbar />
           <ScrollToTop />
           <Home />
-          <Gallery />
+          <Gallery sortGallery={sortGallery}/>
           <div className="btn-center">      
             <Link to="/galeria">
               <button className="btn-vermas">Ver Más</button>

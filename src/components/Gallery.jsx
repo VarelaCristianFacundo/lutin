@@ -7,13 +7,11 @@ import super3 from "../assets/super3.png";
 import super4 from "../assets/super4.png";
 import super5 from "../assets/super5.png";
 import super6 from "../assets/super6.png";
-import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
 // import Tab from "react-bootstrap/Tab";
 // import Tabs from "react-bootstrap/Tabs";
 
-export default function SuperRare() {
+export default function SuperRare({sortGallery}) {
   const [category, setCategory] = useState("");
   const [date, setDate] = useState("");
   const data = [
@@ -60,12 +58,14 @@ export default function SuperRare() {
         <span className="spanGallery">
         <h2 className="title">Galería</h2>
         <div style={{padding:"5rem"}}></div>
-        <ul className="filterDate">
-          <li>Ordenar por:</li>
-          <li className={date==="" ? "active btn-filterDate" : "btn-filterDate"} onClick={() => setDate("")}>Recientes</li>
-          <li className={date==="antiguo" ? "active btn-filterDate" : "btn-filterDate"} onClick={() => setDate("antiguo")}>Antiguos</li>
-          <li className={date==="popular" ? "active btn-filterDate" : "btn-filterDate"} onClick={() => setDate("popular")}>Populares</li>
-        </ul>
+        {sortGallery === true ? (
+              <ul className="filterDate">
+              <li>Ordenar por:</li>
+              <li className={date==="" ? "active btn-filterDate" : "btn-filterDate"} onClick={() => setDate("")}>Recientes</li>
+              <li className={date==="antiguo" ? "active btn-filterDate" : "btn-filterDate"} onClick={() => setDate("antiguo")}>Antiguos</li>
+              <li className={date==="popular" ? "active btn-filterDate" : "btn-filterDate"} onClick={() => setDate("popular")}>Populares</li>
+            </ul>
+            ):(<></>)}             
         </span>   
         <ul className="filterCategory">
           <li className={category==="" ? "active" : ""} onClick={() => setCategory("")}>Todos</li>

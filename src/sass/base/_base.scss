@@ -209,18 +209,45 @@ html {
 }
 
 .carousel-indicators button{
-  background-color: var(--orange) !important;
-  width: 20px !important;
-  height: 20px !important;
-  border-radius: 50% !important;
-  margin-right: 5px !important;
-  margin-left: 5px !important;  
-  &.active{
-    width: 50px !important;
-    border-radius: 19px !important;    
-  }
+  // background-color: var(--orange) !important;
+  // width: 20px !important;
+  // height: 20px !important;
+  // border-radius: 50% !important;
 
+  &.active{
+    background-image: url("../../assets/Indicator01.png") !important;
+    // width: 50px !important;
+    // border-radius: 19px !important;    
+  }
 }
+
+.carousel-indicators {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.carousel-indicators button{
+  width: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  background-image: url("../../assets/Indicator03.png") !important;  
+  background-repeat: no-repeat;
+  padding-bottom: 15px !important;  
+  margin: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  
+  
+}
+
+.carousel-indicators .active {
+  background-image: url("../../assets/Indicator01.png") !important;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  border: none !important;
+  padding-right: 15px !important;
+}
+
 
 .spanGallery{
   align-items: center;
