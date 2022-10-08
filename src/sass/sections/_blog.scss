@@ -1,65 +1,64 @@
 .blog {
-  display: flex;
-  justify-content: center;
-  margin: 0 0;
-  margin-top: 1rem;
-  
-  .container {
-    display: grid;    
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    .content {
-      
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;      
-      border-radius: 2rem;
-      .image {
-        img {
-          width: 100%;
-        }
-      }
-      .card-content{
-        border-color: white;
-      }
-      .title {
-        color: var(--accent-color1);
-      }
-      .description {
-        color: var(--accent-color3);
-        letter-spacing: 0.1rem;
-        line-height: 1.5rem;
-        border-bottom-color: wheat;
-        border-style: dashed;
-      }
-    }
-  }
+	display: flex;
+	justify-content: center;
+	margin: 0 0;
+	margin-top: 1rem;
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		.content {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			border-radius: 2rem;
+			.image {
+				img {
+					width: 100%;
+				}
+			}
+			.card-content {
+				border-color: white;
+			}
+			.title {
+				color: var(--accent-color1);
+			}
+			.description {
+				color: var(--accent-color3);
+				letter-spacing: 0.1rem;
+				line-height: 1.5rem;
+				border-bottom-color: wheat;
+				border-style: dashed;
+			}
+		}
+	}
 }
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
-h2{
-  margin-top: 10rem;
+h2 {
+	margin-top: 10rem;
 }
-.title {  
-  color: var(--accent-color1);
+.title {
+	color: var(--accent-color1);
 }
-.cont-blog{
-  margin-top: 8rem;
+.cont-blog {
+	margin-top: 8rem;
 }
 @media screen and (min-width: 280px) and (max-width: 1080px) {
-  .blog {
-    margin: 0;
-    .container {
-      grid-template-columns: 1fr;
-      gap: 0;
-      .content {
-        padding: 1rem 2rem;
-        border-radius: 0;
-        &:nth-of-type(2) {
-          background-color: var(--background);
-        }
-      }
-    }
-  }
+	.blog {
+		margin: 0;
+		.container {
+			grid-template-columns: 1fr;
+			gap: 0;
+			.content {
+				padding: 1rem 2rem;
+				border-radius: 0;
+				&:nth-of-type(2) {
+					background-color: var(--background);
+				}
+			}
+		}
+	}
 }
