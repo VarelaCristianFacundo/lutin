@@ -77,38 +77,86 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(226, 175, 31, 0.74) 0%, rgba(231, 86, 49, 0.74) 76.56%);
   }
 
-@media screen and (min-width: 280px) and (max-width: 1080px) {
-  .home {
-    padding: 1rem;
-    position: relative;
-    overflow-x: hidden;
-    margin-top: 1rem;
-    .container {
-      font-size: 16px;
-      grid-template-columns: 0.7fr;
-      .image-container {
-        position: absolute;
-        right: -10%;
-        top: 30%;
-        .image {          
-          img {            
-            height: 10rem;
-          }
-        }
-        .ellipse-container {
-          .ellipse {
-            height: 6rem;
-            width: 6rem;
-            filter: blur(30px);
-          }
-          .pink {
-            right: 10%;
-          }
-          .orange {
-            left: -5%;
-          }
-        }
-      }
-    }
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .home{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .card-principal{
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0;
+    padding-bottom: 8rem;
+  }
+  .card-principal img{
+    height: 240px;
+    width: 100%;
+  }
+  .home .container .content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+  }
+  .home .container .content .title{
+    padding-left: 1px;
+    padding-right: 1px;
+  } 
+  .home .container .content a{
+    position: absolute;
+    bottom: 1rem;
+  } 
+  .super-rare{
+    margin-top: -3rem !important;    
+    padding: 0 !important;
+  }
+  .spanGallery{
+    flex-direction: column;    
+  }
+  .filterCategory{
+    display: none;
+  }
+  .alignGallery{
+    margin-top: -10rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    width: 100%;
+  }
+  .title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .blog .container{
+    max-width: 100%;
+  }
+  .card img{
+    width: 19rem !important;
+  }
+
+  .release.orange{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+  }
+  p{
+    font-weight: 900 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .imageLupin{
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+  }
+  .formContent{
+    width: 100%;
+  }
+  .input-group{
+    flex-wrap: nowrap;
   }
 }

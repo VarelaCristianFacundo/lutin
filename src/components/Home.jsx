@@ -1,7 +1,7 @@
 import React from "react";
 import release1 from "../assets/release1.png";
 import release2 from "../assets/release2.png";
-import release3 from "../assets/release3.png";
+import release4 from "../assets/release3.png";
 import { Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -43,8 +43,8 @@ export default function Home() {
                   height={400}
                   width={400}
                   className="d-block w-100"
-                  src={release3}
-                  alt="Third slide"
+                  src={release2}
+                  alt="Second slide"
                 />
               </Carousel.Item>
             </Carousel>
