@@ -236,8 +236,6 @@ html {
   margin: 0 !important;
   background-color: transparent !important;
   border: none !important;
-  
-  
 }
 
 .carousel-indicators .active {
@@ -303,6 +301,24 @@ html {
     padding: 0;
   }
 }
+
+.linktohome{
+  cursor: pointer !important;
+}
+
+.backtohome{  
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
+}
+
+.backtohome span{
+  cursor: pointer;
+  display: flex ;
+  color: #B9BFBF;
+  align-items: center;
+}
+
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
   .app-container::-webkit-scrollbar {
