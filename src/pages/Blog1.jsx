@@ -60,7 +60,7 @@ export default function Detalle() {
 								<div className="col-md-2 mx-4"></div>
 								<div className="col-md-8">
 									<div className="my-4 w-75">
-										<h5 className="title">
+										<p className="text_edit">
 											Los NFT o Token No Fungible son un tipo de activo digital
 											que puede ser adquirido o traspasado a cambio de
 											criptomonedas. Como su nombre indica, es un activo no
@@ -76,7 +76,7 @@ export default function Detalle() {
 											creación y la propiedad del activo digital, con lo cual se
 											asegura que su propietario tenga derecho a monetizar este
 											artículo.
-										</h5>
+										</p>
 									</div>
 								</div>
 							</div>

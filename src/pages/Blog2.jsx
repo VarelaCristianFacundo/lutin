@@ -60,23 +60,64 @@ export default function Detalle() {
 								<div className="col-md-2 mx-4"></div>
 								<div className="col-md-8">
 									<div className="my-4 w-75">
-										<h5 className="title">
-											Los NFT o Token No Fungible son un tipo de activo digital
-											que puede ser adquirido o traspasado a cambio de
-											criptomonedas. Como su nombre indica, es un activo no
-											fungible, lo que quiere decir que es un activo único que
-											no puede ser reemplazado por otro. Por ejemplo, un
-											criptoactivo tradicional como sería el bitcoin (BTC) opera
-											de forma similar al dinero, 1 BTC puede ser reemplazo por
-											otro BTC sin mayor problema. Sin embargo, un NFT no puede
-											ser reemplazado por otro NFT. Con ello, surge el valor de
-											los NFT como activos únicos o piezas de arte digital
-											coleccionables. Estas piezas tienen un certificado de
-											autenticidad en la blockchain, donde toda la red valida la
-											creación y la propiedad del activo digital, con lo cual se
-											asegura que su propietario tenga derecho a monetizar este
-											artículo.
-										</h5>
+										<div className="text_edit">
+											<p>
+												Si bien adquirir un NFT es tan simple como conseguir
+												criptomonedas, buscar un NFT y comprarlo, en un comienzo
+												puede ser complejo ya que implica entender todo este
+												nuevo ecosistema. Por ello, resumimos los pasos
+												generales que debes seguir para que no te pierdas en el
+												camino a adquirir ese anhelado activo digital que
+												buscas:
+											</p>
+											<p>
+												1. Crea una cuenta en un exchange o broker cripto para
+												adquirir tus criptomonedas. Los Exchange más conocidos
+												son: Coinbase y Binance. En estas plataformas puedes
+												adquirir tus criptomonedas con depósitos desde tu banco,
+												tarjeta de débito/crédito o incluso puedes
+												intercambiarlas con otros usuarios.
+											</p>
+											<p>
+												2. Adquiere criptomonedas dentro de tu exchange. Una
+												decisión importante es elegir cuál de las distintas
+												criptomonedas vas a utilizar. La más reconocida en el
+												mundo de los NFT es Etherum, pero adolece de elevados
+												costos de transacción (gas-price). Como alternativa
+												puedes adquirir Polygon o Solana, las cuales tienen
+												costos de transacción mucho más bajos, pero debes tener
+												presente que la criptomoneda a utilizar dependerá de la
+												red (blockchain) en la que se encuentre el NFT que
+												quieras adquirir.
+											</p>
+											<p>
+												3. Abre una billetera cripto. Te recomendamos utilizar
+												Metamask (para Etherum o Polygon) o bien usar Panthom
+												(la billetera de Solana). Estas billeteras te permiten
+												conectarte con las plataformas donde se transan los NFT.
+												Para poder utilizar tu billetera debes transferir las
+												criptomonedas desde tu Exchange a la dirección de tu
+												billetera para que cuentes con fondos.
+											</p>
+											<p>
+												4. Conecta tu billetera al marketpalce de NFT que
+												prefieras. Un Marketplace de NFTs es básicamente donde
+												se compran y venden estos activos digitales, facilitando
+												la adquisición de estos. Lo que debes hacer es conectar
+												tu billetera cripto con tus credenciales. Esto es
+												similar a iniciar sesión con tu cuenta de usuario y
+												password, pero el inicio de sesión se realiza en tu
+												billetera, la cual se conectará automáticamente con el
+												marketplace.
+											</p>
+											<p>
+												5. Compra tu NFT. Para comprar un NFT puedes hacerlo por
+												medio de una subasta, un método habitual para adquirir
+												NFTs, o bien realizar la compra de manera directa con el
+												vendedor, si tienes fondos suficientes en tu billetera
+												podrás adquirir los NFTs.
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
