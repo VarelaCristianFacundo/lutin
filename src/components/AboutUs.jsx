@@ -25,12 +25,11 @@ export default function Release() {
               unidades únicas de criptomonedas que no se pueden replicar.
             </p>
           </div>
-          <div className="imageLupin">
             <img src={lupinstudios} alt="release" />
             {/* <div className="ellipse pink"></div> */}
-          </div>
         </div>
       </div>
     </>
   );
 }
+
