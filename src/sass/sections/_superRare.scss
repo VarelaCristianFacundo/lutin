@@ -31,7 +31,11 @@
 
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
+  
   .super-rare {
+    .title{
+      margin-top: 9rem !important;
+    }
     padding: 1rem 2rem;
     width: 100vw;
     .cards {
@@ -47,4 +51,22 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 280px) and (max-width: 670px) {
+  .super-rare{
+    
+    
+  }
+  .filterCategory{
+    position: absolute;
+  }
+  .alignGalery{
+    margin-top: 4rem;
+  }
+  .backtohome{
+    left: 1rem;
+    top: 4rem;
+  }
+  
 }

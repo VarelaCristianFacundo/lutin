@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import Detalle from "./pages/Detalle";
 import Galeria from "./pages/Galeria";
 import Blog1 from "./pages/Blog1";
@@ -18,8 +17,7 @@ function App() {
   };
   
   return (
-    <>    
-        {/* <Navbar changeTheme={changeTheme} currentTheme={theme} /> */}
+    <>            
         <img src={fondo} style={{width:"100%", position:"absolute"}} alt="" />
         <div data-theme={theme} className="app-container">
             <ScrollUp>

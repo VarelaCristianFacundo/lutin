@@ -114,7 +114,7 @@ export default function Footer() {
                 <h4>{title}</h4>
                 <ul className="redes">
                   {socialLink.map((link, index) => (
-                    <li key={index}><a href={link.url}>{link.icon}</a></li>
+                    <li key={index}><a className="redesSociales" href={link.url}>{link.icon}</a></li>
                   ))}
                 </ul>
               </div>
