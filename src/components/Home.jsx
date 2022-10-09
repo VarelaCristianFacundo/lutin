@@ -23,7 +23,7 @@ export default function Home() {
               <Carousel.Item>
                 <img                  
                   height={400}
-                  width={400}
+                  width={"auto"}
                   className="d-block w-100"
                   src={release1}
                   alt="First slide"
@@ -32,7 +32,7 @@ export default function Home() {
               <Carousel.Item>
                 <img
                   height={400}
-                  width={400}
+                  width={"auto"}
                   className="d-block w-100"
                   src={release2}
                   alt="Second slide"
@@ -41,7 +41,7 @@ export default function Home() {
               <Carousel.Item>
                 <img
                   height={400}
-                  width={400}
+                  width={"auto"}
                   className="d-block w-100"
                   src={release2}
                   alt="Second slide"
@@ -50,6 +50,7 @@ export default function Home() {
             </Carousel>
           </div>
         </div>
+        <Button className="btn-mobile">Ver NFT</Button>
       </div>
     </div>
   );
