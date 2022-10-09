@@ -8,8 +8,6 @@
     grid-template-columns: 2fr 1fr;
     border-radius: 0.5rem;
     .content {
-      padding: 5rem 8rem;
-
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -103,9 +101,6 @@
 }
 .imageLupin{  
   align-items: flex-end;
-  padding: 20px;
-  padding-top: 8rem;
-  padding-right: 5rem;
   width: 100%;
 }
 
