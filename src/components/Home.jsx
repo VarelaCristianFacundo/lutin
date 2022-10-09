@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         <Link to="/detalle">
-            <Button className="btn-verNFT">Ver NFT</Button>
+            <Button className="btn-mobile">Ver NFT</Button>
           </Link>
       </div>
     </div>
