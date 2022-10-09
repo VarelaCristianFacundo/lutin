@@ -24,6 +24,7 @@
       }
     }
     .image-container {
+      width: 100%;
       text-align: center;
       position: relative;
       z-index: 10;
@@ -76,8 +77,48 @@
 
     background: radial-gradient(50% 50% at 50% 50%, rgba(226, 175, 31, 0.74) 0%, rgba(231, 86, 49, 0.74) 76.56%);
   }
+.btn-mobile{
+  display: none;
+}
 
-@media screen and (min-width: 280px) and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+  .nav-visible li a{
+    font-size: 28px;
+    color: white !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-visible{
+    width: 50% !important;
+  }
+  .nav-visible li a{    
+    color: white !important;
+  }
+  .navbar .links-container{
+    padding-right: 0 !important;
+  }
+  .btn-verNFT{
+    display: none !important;
+  }
+  .btn-mobile{
+    display: block !important;
+      margin-top: 60px;
+      align-self: center;
+      color: #6C2817;
+      background-color: #E2AF1F;
+      
+      font-weight: bold;
+      padding: 5px 5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+      border: none !important;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        box-shadow: none;
+      }
+  }
   .home{
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -85,12 +126,14 @@
   .card-principal{
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
     padding: 0;
     padding-bottom: 8rem;
   }
   .card-principal img{
     height: 240px;
-    width: 100%;
+    width: auto !important;
+    margin: 0 auto !important;
   }
   .home .container .content{
     flex-direction: column;
@@ -139,8 +182,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center; 
   }
+
   p{
     font-weight: 900 !important;
     font-size: 16px !important;
@@ -156,4 +200,30 @@
   .input-group{
     flex-wrap: nowrap;
   }
+}
+@media screen and (min-width: 280px) and (max-width: 426px) {
+  .nav-visible{
+    width: 100% !important;
+  }
+  .nav-visible li{    
+    text-align: center;
+  }
+  .nav-visible li a{   
+    font-size: 24px; 
+    color: white !important;
+  }
+  .nav-visible ul{
+    padding:0;
+  }
+}
+
+
+.orange{       
+  align-items: center !important;     
+  padding: 2rem !important; 
+  gap: 2rem;
+}
+.orange img{
+  height: auto;
+  width: auto !important;
 }
