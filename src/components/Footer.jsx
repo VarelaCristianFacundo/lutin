@@ -7,6 +7,7 @@ import solana from "../assets/solana.png";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 import { Button, Form, InputGroup } from "react-bootstrap";
+import { TWITTER_URL, DISCORD_URL, INSTAGRAM_URL } from "../const"
 export default function Footer() {
   const links = [
     {
@@ -27,7 +28,7 @@ export default function Footer() {
       data: [bitcoin, ethereum, polygon, solana],
     },
   ];
-  const socialLink = [<BsTwitter />, <FaDiscord />, <BsInstagram />];
+  const socialLink = [{url: TWITTER_URL, icon: <BsTwitter/>}, {url: DISCORD_URL, icon: <FaDiscord/>}, {url: INSTAGRAM_URL, icon: <BsInstagram/>}];
   const [newsletter, setNewsletter] = useState({
     email: "",
   });
@@ -113,7 +114,7 @@ export default function Footer() {
                 <h4>{title}</h4>
                 <ul className="redes">
                   {socialLink.map((link, index) => (
-                    <li key={index}>{link}</li>
+                    <li key={index}><a href={link.url}>{link.icon}</a></li>
                   ))}
                 </ul>
               </div>
