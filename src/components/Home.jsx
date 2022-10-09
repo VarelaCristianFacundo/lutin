@@ -50,7 +50,9 @@ export default function Home() {
             </Carousel>
           </div>
         </div>
-        <Button className="btn-mobile">Ver NFT</Button>
+        <Link to="/detalle">
+            <Button className="btn-verNFT">Ver NFT</Button>
+          </Link>
       </div>
     </div>
   );
