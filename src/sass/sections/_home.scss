@@ -247,6 +247,20 @@
 		margin-bottom: 7rem;
 		font-size: 12px;		
 	}
+	.alignGallery{
+		margin-top: -1rem !important;	
+	}
+	.app-container{
+		padding-top: 2rem;
+	}
+	footer .links {
+		display: flex !important;
+		justify-content: center;
+		text-align: center;		
+	}
+	footer .link{
+		align-items: center;
+	}	
 }
 
 .orange {
@@ -257,4 +271,15 @@
 .orange img {
 	height: auto;
 	width: auto !important;
+}
+
+footer a{
+	color: #6C2817;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	font-style: italic;
+}
+footer a:hover{
+	color: #2e120b;
 }

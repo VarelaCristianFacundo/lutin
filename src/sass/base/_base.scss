@@ -251,10 +251,8 @@ html {
 
 
 .spanGallery{
-  align-items: center;
   z-index: 1;
-  display: flex;
-  justify-content: space-around;
+  display: flex;  
 }
 
 .navbar{
@@ -269,6 +267,9 @@ html {
   }
   .links-container {
     padding-right: 10rem;
+  }
+  a:hover{
+    color: #E75631 !important;
   }
 }
 
@@ -344,4 +345,11 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--orange);
+}
+
+.alert{
+  color: #000000 !important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }

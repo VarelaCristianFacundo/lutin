@@ -6,13 +6,13 @@ import polygon from "../assets/polygon.png";
 import solana from "../assets/solana.png";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
-import { Form, InputGroup } from "react-bootstrap";
-import { TWITTER_URL, DISCORD_URL, INSTAGRAM_URL } from "../const"
+import { Alert, Form, InputGroup } from "react-bootstrap";
+import { TWITTER_URL, DISCORD_URL, INSTAGRAM_URL, LUTINSTUDIOSOPENSEA_URL, BITCOIN_URL, ETHEREUM_URL, SOLANA_URL, POLYGON_URL } from "../const"
 export default function Footer() {
   const links = [
     {
       title: "Lutin Studios",
-      data: [{name: "Home",link: "#"},{ name: "Blog", link:"#blog"}, {name:"Galería", link:"#galeria"}, {name:"Contacto", link:"#contact"}, "Lutin Studios en OpenSea"],
+      data: [{name: "Home",link: "#"},{ name: "Blog", link:"#blog"}, {name:"Galería", link:"#galeria"}, {name:"Contacto", link:"#contact"}, {name:"Lutin Studios en OpenSea", link:LUTINSTUDIOSOPENSEA_URL}],
     },
   ];
 
@@ -25,7 +25,7 @@ export default function Footer() {
   const imgCoins = [
     {
       title: "Compatible con:",
-      data: [bitcoin, ethereum, polygon, solana],
+      data: [{name: bitcoin,link: BITCOIN_URL},{name: ethereum,link: ETHEREUM_URL},{name: polygon,link: POLYGON_URL},{name: solana,link: SOLANA_URL}],
     },
   ];
   const socialLink = [{url: TWITTER_URL, icon: <BsTwitter/>}, {url: DISCORD_URL, icon: <FaDiscord/>}, {url: INSTAGRAM_URL, icon: <BsInstagram/>}];
@@ -34,6 +34,8 @@ export default function Footer() {
   });
 
   const { email } = newsletter;
+  const [success, setSuccess] = useState();
+  const [danger, setDanger] = useState();
 
   const handleChange = (e) => {
     setNewsletter({ ...newsletter, [e.target.name]: e.target.value });
@@ -57,8 +59,10 @@ export default function Footer() {
       );
       await response.json();
       setNewsletter({ ...newsletter, email: "" });
+      setSuccess(true)
     } catch (err) {
       console.log(err);
+      setDanger(true)
     }
   };
   return (
@@ -92,6 +96,22 @@ export default function Footer() {
               </div>
             </InputGroup>
           </Form>
+          {success ? (
+            <Alert key="success" variant="success">
+              El mensaje ha sido enviado
+            </Alert>
+          ) : 
+          (
+            <></>
+          )}
+          {danger ? (
+            <Alert key="danger" variant="danger">
+              El mensaje no pudo enviarse, inténtalo nuevamente
+            </Alert>
+          ) : 
+          (
+            <></>
+          )}
         </div>
         <div className="links">
           {links.map(({ title, data }, index) => {
@@ -129,7 +149,7 @@ export default function Footer() {
                 <ul className="coinMarket">
                   {data.map((img, index2) => (
                     <li key={index2}>
-                      <img src={img} alt={img} />
+                      <a href={img.link}><img src={img.name} alt={img.name} /></a>                      
                     </li>
                   ))}
                 </ul>

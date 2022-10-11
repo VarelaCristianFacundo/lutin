@@ -56,8 +56,7 @@ export default function SuperRare({sortGallery}) {
     <div className="super-rare" id="galeria">      
       <div className="title-container">     
         <span className="spanGallery">
-        <h2 className="title">Galería</h2>
-        <div className="divSepare" style={{padding:"5rem"}}></div>
+        <h2 className="title">Galería</h2>        
         {sortGallery === true ? (
               <ul className="filterDate">
               <li>Ordenar por:</li>
