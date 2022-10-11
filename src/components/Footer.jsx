@@ -6,13 +6,13 @@ import polygon from "../assets/polygon.png";
 import solana from "../assets/solana.png";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
-import { Button, Form, InputGroup } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
 import { TWITTER_URL, DISCORD_URL, INSTAGRAM_URL } from "../const"
 export default function Footer() {
   const links = [
     {
       title: "Lutin Studios",
-      data: ["Home", "Blog", "Galería", "Contacto", "Lutin Studios en OpenSea"],
+      data: [{name: "Home",link: "#"},{ name: "Blog", link:"#blog"}, {name:"Galería", link:"#galeria"}, {name:"Contacto", link:"#contact"}, "Lutin Studios en OpenSea"],
     },
   ];
 
@@ -99,8 +99,8 @@ export default function Footer() {
               <div className="link" key={index}>
                 <h4>{title}</h4>
                 <ul>
-                  {data.map((link, index2) => (
-                    <li key={index2}>{link}</li>
+                  {data.map((link, index2) => (                    
+                      <li key={index2}><a href={link.link}>{link.name}</a></li>                    
                   ))}
                 </ul>
               </div>
@@ -114,7 +114,7 @@ export default function Footer() {
                 <h4>{title}</h4>
                 <ul className="redes">
                   {socialLink.map((link, index) => (
-                    <li key={index}><a className="redesSociales" href={link.url}>{link.icon}</a></li>
+                    <li key={index}><a target="blank" className="redesSociales" href={link.url}>{link.icon}</a></li>
                   ))}
                 </ul>
               </div>
@@ -137,10 +137,6 @@ export default function Footer() {
             );
           })}
         </div>
-      </div>
-      <div className="lower">
-        <span>&copy; Copyright 2022 NFT</span>
-        <span>Launching August 2022</span>
       </div>
     </footer>
   );
