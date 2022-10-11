@@ -12,7 +12,7 @@ export default function Blog() {
     <div className="blog">
       <div className="container">        
         <Link to="/blog1">
-          <Card style={{ width: 'fit-content', background: 'transparent', border: '1px solid #535959', cursor:'pointer'}}>
+          <Card style={{ width: 'fit-content', background: 'transparent', border: '1px solid #535959', cursor:'pointer', height:"100%"}}>
             <Card.Img variant="top" src={eth1} />
             <Card.Body style={{ padding: '20px' }}>
               <Card.Title className="title">¿Qué son los NFTs?</Card.Title>

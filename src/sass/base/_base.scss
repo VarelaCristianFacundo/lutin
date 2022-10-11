@@ -353,3 +353,12 @@ html {
   font-size: 16px;
   line-height: 20px;
 }
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 2620px) {
+  .spanGallery{
+    justify-content: space-around;
+  }
+.filterDate{  
+  justify-content: flex-end;
+  }
+}
