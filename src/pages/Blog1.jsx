@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import lupinstudios from "../assets/Logo_Brand.png"
 import NavbarBlog from "../components/NavbarBlog"
 import "../sass/sections/_blogDetail.scss"
-import fondo from "../assets/Hero_Section2.png";
+import fondo from "../assets/Hero_Section2.png"
 
 export default function Detalle() {
 	const backgroundImage = {
@@ -13,14 +13,19 @@ export default function Detalle() {
 	}
 	return (
 		<>
-			<img className="imgFondo" src={fondo} style={{width:"100%", position:"absolute", top:"0", left:"0"}} alt="" />
+			<img
+				className="imgFondo"
+				src={fondo}
+				style={{width: "100%", position: "absolute", top: "0", left: "0"}}
+				alt=""
+			/>
 			<NavbarBlog />
 			<div className="home">
 				<div className="card-principal">
 					<Link to="/">
-						<div className="d-flex">
+						<div className="d-flex align-items-center">
 							<svg
-								width="29"
+								width="20"
 								height="20"
 								viewBox="0 0 29 20"
 								fill="none"
@@ -32,7 +37,7 @@ export default function Detalle() {
 									fill="#B9BFBF"
 								/>
 							</svg>
-							<p className="mx-3">Volver</p>
+							<p className="mx-3 m-0">Volver</p>
 						</div>
 					</Link>
 					<div className="content col">
