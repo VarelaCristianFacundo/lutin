@@ -1,5 +1,4 @@
 import React from "react"
-import Gallery from "../components/Gallery"
 import {Button} from "react-bootstrap"
 import {Link} from "react-router-dom"
 import release1 from "../assets/release1.png"
@@ -7,10 +6,12 @@ import Image04 from "../assets/Image04.png"
 import Image05 from "../assets/Image05.png"
 import Image06 from "../assets/Image06.png"
 import NavbarDetalle from "../components/NavbarDetalle"
+import fondo from "../assets/Hero_Section2.png";
 
 export default function Detalle() {
 	return (
 		<>
+			<img className="imgFondo" src={fondo} style={{width:"100%", position:"absolute", top:"0", left:"0"}} alt="" />
 			<NavbarDetalle />
 			<div className="home">
 				<div className="container card-principal">

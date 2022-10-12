@@ -18,7 +18,7 @@ function App() {
   
   return (
     <>            
-        <img src={fondo} style={{width:"100%", position:"absolute"}} alt="" />
+        <img className="imgFondo" src={fondo} style={{width:"100%", position:"absolute"}} alt="" />
         <div data-theme={theme} className="app-container">
             <ScrollUp>
               <Routes>
