@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 import eth2 from "../assets/eth2.png"
 import lupinstudios from "../assets/Logo_Brand.png"
+import NavbarBlog from "../components/NavbarBlog"
 import "../sass/sections/_blogDetail.scss"
 
 export default function Detalle() {
@@ -12,6 +13,7 @@ export default function Detalle() {
 	}
 	return (
 		<>
+			<NavbarBlog />
 			<div className="home">
 				<div className="card-principal">
 					<Link to="/">
