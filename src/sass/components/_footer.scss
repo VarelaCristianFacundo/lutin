@@ -5,12 +5,14 @@ footer {
   justify-content: center;
   gap: 5rem;
   .upper {
+    text-align: center;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     color: #262628;
     .brand-container {
       .input-group{
+        justify-content: center;
         input{
           border-radius: 0px;
           border-right: none;
@@ -75,8 +77,8 @@ footer {
           flex-direction: row;
         }
         .coinMarket{
-          flex-direction: row;
-          width: 67%;
+          justify-content: center;
+          flex-direction: row;          
           flex-wrap: wrap;
         }
       }
@@ -115,8 +117,7 @@ footer {
       text-align: center;
       gap: 2rem;
       .links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: grid;        
         gap: 2rem;
         .link {
           color: white;

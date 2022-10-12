@@ -6,10 +6,12 @@ import release1 from "../assets/release1.png"
 import Image04 from "../assets/Image04.png"
 import Image05 from "../assets/Image05.png"
 import Image06 from "../assets/Image06.png"
+import NavbarDetalle from "../components/NavbarDetalle"
 
 export default function Detalle() {
 	return (
 		<>
+			<NavbarDetalle />
 			<div className="home">
 				<div className="container card-principal">
 					<div className="col">

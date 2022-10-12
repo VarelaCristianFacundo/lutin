@@ -69,7 +69,7 @@ export default function Footer() {
     <footer>
       <hr className="container" />
       <div className="upper">
-        <div className="brand-container">
+        <div className="brand-container col-xl-6">
           <div className="brand">
             <img src={logo} alt="logo" />
           </div>
@@ -113,7 +113,7 @@ export default function Footer() {
             <></>
           )}
         </div>
-        <div className="links">
+        <div className="links col-xl-2">
           {links.map(({ title, data }, index) => {
             return (
               <div className="link" key={index}>
@@ -127,7 +127,7 @@ export default function Footer() {
             );
           })}
         </div>
-        <div className="links">
+        <div className="links col-xl-1">
           {redesSociales.map(({ title, data }, index) => {
             return (
               <div className="link" key={index}>
@@ -141,7 +141,7 @@ export default function Footer() {
             );
           })}
         </div>
-        <div className="links">
+        <div className="links col-xl-2">
           {imgCoins.map(({ title, data }, index) => {
             return (
               <div className="link" key={index}>
