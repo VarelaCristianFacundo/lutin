@@ -190,7 +190,7 @@
 		margin-bottom: 1rem;
 	}
 	.blog .container {
-		max-width: 100%;		
+		max-width: 100%;
 	}
 
 	.release.orange {
@@ -218,7 +218,7 @@
 	}
 }
 @media screen and (min-width: 280px) and (max-width: 769px) {
-	.filterDate{
+	.filterDate {
 		justify-content: center;
 	}
 	.nav-visible {
@@ -235,35 +235,35 @@
 		padding: 0;
 	}
 
-	.super-rare{
-		margin-top:8rem !important;
+	.super-rare {
+		margin-top: 8rem !important;
 	}
-	.super-rare .title-container .title{
-		margin-top:0 !important;
+	.super-rare .title-container .title {
+		margin-top: 0 !important;
 	}
-	.divSepare{
-		padding: 0!important;
+	.divSepare {
+		padding: 0 !important;
 	}
-	.filterDate{
+	.filterDate {
 		padding-top: 0 !important;
 		padding-left: 0 !important;
 		margin-bottom: 7rem;
-		font-size: 12px;		
+		font-size: 12px;
 	}
-	.alignGallery{
-		margin-top: -1rem !important;	
+	.alignGallery {
+		margin-top: -1rem !important;
 	}
-	.app-container{
+	.app-container {
 		padding-top: 2rem;
 	}
 	footer .links {
 		display: flex !important;
 		justify-content: center;
-		text-align: center;		
+		text-align: center;
 	}
-	footer .link{
+	footer .link {
 		align-items: center;
-	}	
+	}
 }
 
 .orange {
@@ -276,14 +276,14 @@
 	width: auto !important;
 }
 
-footer a{
-	color: #6C2817;
+footer a {
+	color: #6c2817;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 150%;
 	font-style: italic;
 }
-footer a:hover{
+footer a:hover {
 	color: #2e120b;
 }
 
@@ -292,4 +292,9 @@ footer a:hover{
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 1fr;
 	gap: 4rem;
+}
+
+.tamanioHome {
+	font-size: 55px;
+	font-weight: 200;
 }

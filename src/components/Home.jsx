@@ -10,7 +10,13 @@ export default function Home() {
 		<div className="home">
 			<div className="container card-principal">
 				<div className="content col">
+<<<<<<< HEAD
 					<h1 className="title">Conoce nuestro primer lanzamiento</h1>
+=======
+					<h1 className="title tamanioHome">
+						Conocé nuestro primer lanzamiento
+					</h1>
+>>>>>>> 9a189ea25a3eae2636dc64710acca216261dd0d8
 					<Link to="/detalle">
 						<Button className="btn-verNFT">Ver NFT</Button>
 					</Link>
