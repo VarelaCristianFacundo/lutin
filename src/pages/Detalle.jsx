@@ -7,6 +7,7 @@ import Image05 from "../assets/Image05.png"
 import Image06 from "../assets/Image06.png"
 import NavbarDetalle from "../components/NavbarDetalle"
 import fondo from "../assets/Hero_Section2.png"
+import { OPENSEA_URL } from "../const"
 
 export default function Detalle() {
 	return (
@@ -57,9 +58,9 @@ export default function Detalle() {
 								personas alrededor del mundo.
 							</h5>
 						</div>
-						<Link to="/detalle">
-							<Button className="btn-verNFT mt-4">Comprar en OpenSea</Button>
-						</Link>
+						
+						<Button target="blank" href={OPENSEA_URL} className="btn-verNFT mt-4">Comprar en OpenSea</Button>
+						
 					</div>
 					<div className="tamanioImage">
 						<img
