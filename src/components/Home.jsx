@@ -10,7 +10,7 @@ export default function Home() {
 		<div className="home">
 			<div className="container card-principal">
 				<div className="content col">
-					<h1 className="title">Conocé nuestro primer lanzamiento</h1>
+					<h1 className="title">Conoce nuestro primer lanzamiento</h1>
 					<Link to="/detalle">
 						<Button className="btn-verNFT">Ver NFT</Button>
 					</Link>
