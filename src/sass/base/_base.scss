@@ -336,6 +336,17 @@ p {
 	.app-container::-webkit-scrollbar {
 		display: none;
 	}
+	.text-end img{
+		height: 200px !important;
+		width: 100% !important;
+	}
+	.text-end{
+		display: flex;
+	}
+	.my-4{
+		text-align: center;
+		width: 100% !important;
+	}
 }
 
 ::-webkit-scrollbar {
